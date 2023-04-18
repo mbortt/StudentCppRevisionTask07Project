@@ -34,5 +34,48 @@
  */
 
 bool task03(int x, int y, int z, int a, int b, int c) {
-	return false;
+	if (x < 0 || y < 0 || z < 0 || a < 0 || b < 0 || c < 0) {
+		return false;
+	}
+	
+	if (a > b) {
+		int t = a;
+		a = b;
+		b = t;
+	}
+
+	if (b > c) {
+		int t = c;
+		c = b;
+		b = t;
+	}
+
+	if (a > b) {
+		int t = a;
+		a = b;
+		b = t;
+	}
+
+
+	if (x > y) {
+		int t = x;
+		x = y;
+		y = t;
+	}
+
+	if (y > z) {
+		int t = y;
+		y = z;
+		z = t;
+	}
+
+	if (x> y) {
+		int t = x;
+		x = y;
+		y = t;
+	}
+
+
+
+	return x<=a && y<=b && z<=c;
 }
