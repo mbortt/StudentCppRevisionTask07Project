@@ -37,7 +37,7 @@ bool task03(int x, int y, int z, int a, int b, int c) {
 	if (x < 0 || y < 0 || z < 0 || a < 0 || b < 0 || c < 0) {
 		return false;
 	}
-	
+
 	if (a > b) {
 		int t = a;
 		a = b;
@@ -69,7 +69,7 @@ bool task03(int x, int y, int z, int a, int b, int c) {
 		z = t;
 	}
 
-	if (x> y) {
+	if (x > y) {
 		int t = x;
 		x = y;
 		y = t;
@@ -77,5 +77,5 @@ bool task03(int x, int y, int z, int a, int b, int c) {
 
 
 
-	return x<=a && y<=b && z<=c;
+	return x <= a && y <= b && z <= c;
 }
